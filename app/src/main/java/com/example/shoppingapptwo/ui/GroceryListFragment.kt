@@ -71,6 +71,7 @@ class GroceryListFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+        Log.i("Grocery", "onCreate Called")
         // Inflate the layout for this fragment
         _binding = DataBindingUtil.inflate(inflater, R.layout.fragment_grocery_list, container, false)
 
@@ -82,10 +83,9 @@ class GroceryListFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding.apply {
-            viewModels = sharedViewModel
+            viewModel = sharedViewModel
             lifecycleOwner = viewLifecycleOwner
             shopList = this@GroceryListFragment
-            check = this@GroceryListFragment
             setShoppingList()
 
 
@@ -95,6 +95,21 @@ class GroceryListFragment : Fragment() {
 
 
 
+    }
+
+    override fun onStart() {
+        super.onStart()
+        Log.d("GStart", "OnStart Called")
+    }
+
+    override fun onResume() {
+        super.onResume()
+        Log.d("GResume","OnResume Called")
+    }
+
+    override fun onStop() {
+        super.onStop()
+        Log.d("GStop","OnStop Called")
     }
 
 

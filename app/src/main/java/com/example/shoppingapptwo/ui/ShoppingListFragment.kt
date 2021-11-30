@@ -2,6 +2,7 @@ package com.example.shoppingapptwo.ui
 
 
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -33,6 +34,7 @@ class ShoppingListFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+        Log.i("Shopping", "onCreate Called")
         // Inflate the layout for this fragment
         _binding = DataBindingUtil.inflate(inflater, R.layout.fragment_shopping_list, container, false)
         //Initialize data.
@@ -112,6 +114,26 @@ class ShoppingListFragment : Fragment() {
 
 
     }
+
+
+
+
+    override fun onStart() {
+        super.onStart()
+        Log.d("SStart", "OnStart Called")
+    }
+
+    override fun onResume() {
+        super.onResume()
+        Log.d("SResume","OnResume Called")
+    }
+
+    override fun onStop() {
+        super.onStop()
+        Log.d("SStop","OnStop Called")
+    }
+
+
 
 
 

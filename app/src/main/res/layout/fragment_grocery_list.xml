@@ -16,9 +16,7 @@
         name = "shopList"
         type="com.example.shoppingapptwo.ui.GroceryListFragment"/>
 
-        <variable
-            name="check"
-            type="com.example.shoppingapptwo.ui.ShoppingListFragment" />
+
 
         <variable
             name="viewModel"
