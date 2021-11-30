@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ShoppingAppTwo</string>
+    <string name="add">add</string>
+    <string name="remove">remove</string>
+    <string name="shopping_list">SHOPPING LIST</string>
+    <string name="shoppingcart">shoppingCart</string>
+</resources>

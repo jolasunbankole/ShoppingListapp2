@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<data>
+    <variable
+        name="shoppingListFragment"
+        type="com.example.shoppingapptwo.ui.ShoppingListFragment" />
+
+    <variable
+        name="viewModel"
+        type="com.example.shoppingapptwo.sharedViewModel.SharedViewModel" />
+</data>
+
+
+    <RelativeLayout
+        android:id="@+id/rlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        tools:context=".ui.ShoppingListFragment">
+
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:padding="5dp"
+            app:layoutManager="LinearLayoutManager"
+            android:layout_above="@+id/addsubBts"
+            tools:listitem="@layout/list_item"
+             />
+
+
+
+        <LinearLayout
+            android:id="@+id/addsubBts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+
+
+
+            <Button
+                android:id="@+id/addItem"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:contentDescription="@string/add"
+                android:text="@string/add"
+                style="?android:attr/buttonBarButtonStyle" />
+
+            <Button
+                android:id="@+id/removeItem"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="4dp"
+                android:contentDescription="@string/remove"
+                android:text="@string/remove"
+                style="?android:attr/buttonBarButtonStyle" />
+
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+</layout>
+

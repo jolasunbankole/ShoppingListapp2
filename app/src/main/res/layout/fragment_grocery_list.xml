@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+
+<layout
+
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+
+    <variable
+        name = "shopList"
+        type="com.example.shoppingapptwo.ui.GroceryListFragment"/>
+
+        <variable
+            name="check"
+            type="com.example.shoppingapptwo.ui.ShoppingListFragment" />
+
+        <variable
+            name="viewModel"
+            type="com.example.shoppingapptwo.sharedViewModel.SharedViewModel" />
+
+        </data>
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".ui.GroceryListFragment">
+
+
+    <TextView
+        android:id="@+id/ItemOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:textSize="15sp"
+        android:background="@color/teal_200"
+        android:text="@{shopList.listing[0]}" />
+
+    <TextView
+        android:id="@+id/ItemTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/teal_200"
+        android:textSize="15sp"
+        android:text="@{shopList.listing[1]}"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="50dp"/>
+
+
+    <TextView
+        android:id="@+id/ItemThree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/teal_200"
+        android:text="@{shopList.listing[2]}"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="90dp"/>
+
+    <TextView
+        android:id="@+id/ItemFour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/teal_200"
+        android:text="@{shopList.listing[3]}"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="130dp"/>
+
+    <TextView
+        android:id="@+id/ItemFive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/teal_200"
+        android:text="@{shopList.listing[4]}"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="170dp"/>
+
+    <TextView
+        android:id="@+id/ItemSix"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/teal_200"
+        android:text="@{shopList.listing[5]}"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="210dp"/>
+
+    <TextView
+        android:id="@+id/ItemSeven"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/teal_200"
+        android:text="@{shopList.listing[6]}"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="250dp"/>
+
+    <TextView
+        android:id="@+id/ItemEight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/teal_200"
+        android:text="@{shopList.listing[7]}"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="290dp"/>
+
+    <TextView
+        android:id="@+id/ItemNine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/teal_200"
+        android:text="@{shopList.listing[8]}"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="330dp"/>
+
+
+    <TextView
+        android:id="@+id/ItemTen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/teal_200"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="370dp"
+        android:text="@{shopList.listing[9]}" />
+
+    <TextView
+        android:id="@+id/ItemEleven"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/teal_200"
+        android:text="@{shopList.listing[10]}"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="410dp"/>
+
+
+    <TextView
+        android:id="@+id/ItemTwelve"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/teal_200"
+        android:text="@{shopList.listing[11]}"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="450dp"/>
+
+    <TextView
+        android:id="@+id/ItemThirteen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/teal_200"
+        android:text="@{shopList.listing[12]}"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="490dp"/>
+
+    <TextView
+        android:id="@+id/ItemFourteen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/teal_200"
+        android:text="@{shopList.listing[13]}"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="530dp"/>
+
+    <TextView
+        android:id="@+id/ItemFifthTeen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/teal_200"
+        android:text="@{shopList.listing[14]}"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="570dp"/>
+
+    <TextView
+        android:id="@+id/ItemSixTeen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="610dp"
+        android:background="@color/teal_200"
+        android:text="@{shopList.listing[15]}" />
+
+    <TextView
+        android:id="@+id/ItemSevenTeen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/teal_200"
+        android:text="@{shopList.listing[16]}"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="650dp"/>
+
+    <TextView
+        android:id="@+id/ItemEightTeen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/teal_200"
+        android:text="@{shopList.listing[17]}"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="690dp"/>
+
+    <CheckBox
+        android:id="@+id/radioButton"
+        android:onClick="@{() -> viewModel.groceryList}"
+        android:layout_width="33dp"
+        android:layout_height="34dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="3dp"
+        android:layout_marginStart="102dp"
+        android:layout_marginEnd="132dp" />
+
+    <CheckBox
+        android:id="@+id/radioButton2"
+        android:layout_width="33dp"
+        android:layout_height="34dp"
+        android:layout_below="@+id/radioButton"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="102dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="132dp"
+         />
+
+    <CheckBox
+        android:id="@+id/radioButton3"
+        android:layout_width="33dp"
+        android:layout_height="34dp"
+        android:layout_below="@+id/radioButton"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="102dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="132dp"
+         />
+
+    <CheckBox
+        android:id="@+id/radioButton4"
+        android:layout_width="33dp"
+        android:layout_height="34dp"
+        android:layout_below="@+id/radioButton"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="102dp"
+        android:layout_marginTop="84dp"
+        android:layout_marginEnd="132dp"
+         />
+
+    <CheckBox
+        android:id="@+id/radioButton5"
+        android:layout_width="33dp"
+        android:layout_height="34dp"
+        android:layout_below="@+id/radioButton"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="102dp"
+        android:layout_marginTop="123dp"
+        android:layout_marginEnd="132dp"
+         />
+
+    <CheckBox
+        android:id="@+id/radioButton6"
+        android:layout_width="33dp"
+        android:layout_height="34dp"
+        android:layout_below="@+id/radioButton"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="102dp"
+        android:layout_marginTop="160dp"
+        android:layout_marginEnd="132dp"
+         />
+
+    <CheckBox
+        android:id="@+id/radioButton7"
+        android:layout_width="33dp"
+        android:layout_height="34dp"
+        android:layout_below="@+id/radioButton"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="102dp"
+        android:layout_marginTop="199dp"
+        android:layout_marginEnd="132dp"
+         />
+
+    <CheckBox
+        android:id="@+id/radioButton8"
+        android:layout_width="33dp"
+        android:layout_height="34dp"
+        android:layout_below="@+id/radioButton"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="102dp"
+        android:layout_marginTop="241dp"
+        android:layout_marginEnd="132dp"
+        />
+
+    <CheckBox
+        android:id="@+id/radioButton9"
+        android:layout_width="33dp"
+        android:layout_height="34dp"
+        android:layout_below="@+id/radioButton"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="102dp"
+        android:layout_marginTop="285dp"
+        android:layout_marginEnd="132dp"
+         />
+
+    <CheckBox
+        android:id="@+id/radioButton10"
+        android:layout_width="33dp"
+        android:layout_height="34dp"
+        android:layout_below="@+id/radioButton"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="102dp"
+        android:layout_marginTop="325dp"
+        android:layout_marginEnd="132dp"
+         />
+
+    <CheckBox
+        android:id="@+id/radioButton11"
+        android:layout_width="33dp"
+        android:layout_height="34dp"
+        android:layout_below="@+id/radioButton"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="102dp"
+        android:layout_marginTop="366dp"
+        android:layout_marginEnd="132dp"
+         />
+
+
+    <CheckBox
+        android:id="@+id/radioButton12"
+        android:layout_width="33dp"
+        android:layout_height="34dp"
+        android:layout_below="@+id/radioButton"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="102dp"
+        android:layout_marginTop="405dp"
+        android:layout_marginEnd="132dp"
+         />
+
+    <CheckBox
+        android:id="@+id/radioButton13"
+        android:layout_width="33dp"
+        android:layout_height="34dp"
+        android:layout_below="@+id/radioButton"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="102dp"
+        android:layout_marginTop="445dp"
+        android:layout_marginEnd="132dp"
+         />
+
+    <CheckBox
+        android:id="@+id/radioButton14"
+        android:layout_width="33dp"
+        android:layout_height="34dp"
+        android:layout_below="@+id/radioButton"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="102dp"
+        android:layout_marginTop="485dp"
+        android:layout_marginEnd="132dp"
+         />
+
+    <CheckBox
+        android:id="@+id/radioButton15"
+        android:layout_width="33dp"
+        android:layout_height="34dp"
+        android:layout_below="@+id/radioButton"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="102dp"
+        android:layout_marginTop="526dp"
+        android:layout_marginEnd="132dp"
+         />
+
+    <CheckBox
+        android:id="@+id/radioButton16"
+        android:layout_width="33dp"
+        android:layout_height="34dp"
+        android:layout_below="@+id/radioButton"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="102dp"
+        android:layout_marginTop="606dp"
+        android:layout_marginEnd="132dp"
+         />
+
+    <CheckBox
+        android:id="@+id/radioButton17"
+        android:layout_width="33dp"
+        android:layout_height="34dp"
+        android:layout_below="@+id/radioButton"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="102dp"
+        android:layout_marginTop="565dp"
+        android:layout_marginEnd="132dp"
+         />
+
+    <CheckBox
+        android:id="@+id/radioButton18"
+        android:layout_width="33dp"
+        android:layout_height="34dp"
+        android:layout_below="@+id/radioButton"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="102dp"
+        android:layout_marginTop="644dp"
+        android:layout_marginEnd="132dp"
+         />
+
+
+</RelativeLayout>
+</ScrollView>
+</layout>
+
+
